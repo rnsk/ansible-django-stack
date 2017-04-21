@@ -37,9 +37,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Shared folder from the host machine to the guest machine. Uncomment the line
   # below to enable it.
-  # config.vm.synced_folder "../app", "/webapps/app", \
-  #   create: true, mount_options: ["dmode=755", "fmode=644"], \
-  #   owner: "vagrant", group: "vagrant"
+  config.vm.synced_folder "../app", "/webapps/app", \
+    create: true, mount_options: ["dmode=755", "fmode=644"], \
+    owner: "vagrant", group: "vagrant"
 
   # View the documentation for the provider you are using for more
   # information on available options.
